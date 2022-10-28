@@ -60,7 +60,7 @@
                 height: 80%;
                 margin: 20px auto 0;
             /*  border: 1px solid #fff; */
-                position: relative;
+                position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -172,9 +172,8 @@
             $('.blind').css('display','block');
             $('#header > p').css('display','none');
             $('#camera--trigger').css('display','none');
-            $('#camera--view').css('display','none');
-            $('#camera--view').css('backdrop-filter','blur(30px)');
-            $('#camera--view').css('transform','scale(1.5)');
+            $('#camera--view').css('backdrop-filter','blur(10px)');
+            $('#camera--view').css('transform','translateX(-50%) scale(1.5)');
         });
     
         // 페이지가 로드되면 함수 실행

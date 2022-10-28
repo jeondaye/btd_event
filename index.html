@@ -53,8 +53,7 @@
             }
 
             #camera--view, #camera--sensor, #camera--output{
-                transform: translateX(-50%) scaleX(-1);
-                filter: FlipH;
+                transform: scaleX(-1);
             }
 
             #camera--trigger{
@@ -77,6 +76,7 @@
                 width: 82%!important;
                 left: 50%;
                 margin: 20px auto 0;
+                transform: translateX(-50%) !important;
             }
             .templete{
                 background: #fff;
@@ -105,11 +105,15 @@
         <!-- <h3>Simple Web Camera</h3> -->
         <p>폴라로이드 촬영하기📸✌</p>
     </div>
-
+    
+    <!-- main 태그는 문서의 주요 내용을 담는 태그이다. 한 문서에 한개 존재 해야 한다.
+        또한 article, aside, header, nav, footer등 요소의 하위에 사용해서는 안된다.
+    -->
     <main id="camera">
         
         <canvas id="camera--sensor"></canvas>
 
+        <!-- 기기의 카메라에 접근하여 영상을 페이지에 재생한다. -->
         <video id="camera--view" autoplay="" playsinline=""></video>
             <div class="templete blind">
                 <img src="//:0" alt="" id="camera--output">
@@ -158,6 +162,7 @@
         $('#camera--trigger').on("click", function(){
             $('.blind').css('display','block');
             $('#header > p').css('display','none');
+            $('##camera--trigger').css('display','none');
         });
     
         // 페이지가 로드되면 함수 실행

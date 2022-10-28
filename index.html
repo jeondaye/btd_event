@@ -3,10 +3,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Camera Web App</title>
+        <title>생일 이벤트 준비 </title>
         <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <!-- https://m.blog.naver.com/jcosmoss/221726557936 -->
-        <!-- https://velog.io/@2ujin/%EC%B9%9C%EA%B5%AC%EC%83%9D%EC%9D%BC-%EA%B8%B0%EB%85%90-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0 -->
         <style>
             @font-face {
                 font-family: 'drfont_daraehand';
@@ -108,15 +106,11 @@
         <!-- <h3>Simple Web Camera</h3> -->
         <p>폴라로이드 촬영하기📸✌</p>
     </div>
-    
-    <!-- main 태그는 문서의 주요 내용을 담는 태그이다. 한 문서에 한개 존재 해야 한다.
-        또한 article, aside, header, nav, footer등 요소의 하위에 사용해서는 안된다.
-    -->
+
     <main id="camera">
         
         <canvas id="camera--sensor"></canvas>
 
-        <!-- 기기의 카메라에 접근하여 영상을 페이지에 재생한다. -->
         <video id="camera--view" autoplay="" playsinline=""></video>
             <div class="templete blind">
                 <img src="//:0" alt="" id="camera--output">

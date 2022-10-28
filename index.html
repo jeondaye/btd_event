@@ -172,10 +172,11 @@
             $('.blind').css('display','block');
             $('#header > p').css('display','none');
             $('#camera--trigger').css('display','none');
+            $('#camera--sensor').css('backdrop-filter','blur(50px)');
+            $('#camera--sensor').css('transform','translateX(-50%) scale(1.5)');
+            $('#camera--sensor').css('background','#fff');
+            $('#camera--sensor').css('display','none');
             $('#camera--view').css('display','none');
-            $('#camera--view').css('backdrop-filter','blur(50px)');
-            $('#camera--view').css('transform','translateX(-50%) scale(1.5)');
-            $('#camera--view').css('background','rgb(121 200 253 / 29%)');
         });
     
         // 페이지가 로드되면 함수 실행

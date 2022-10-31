@@ -89,7 +89,7 @@ p{
 }
 
 .taken {
-    height: 65.5%!important;
+    height: 64%!important;
     width: 82%!important;
     left: 50%;
     margin: 20px auto 0;
@@ -110,7 +110,7 @@ p{
     bottom: 4%;
     width: 100%;
     text-align: center;
-    line-height: 20px;
+    line-height: 23px;
 }
 .blind{
     display: none;

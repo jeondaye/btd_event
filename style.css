@@ -218,7 +218,14 @@ button{
     transform: translateX(-50%);
     font-family: 'galmuri11';
 }
-
+.cam_notice{
+    position: absolute;
+    bottom: 8px;
+    opacity: 0.4;
+    font-size: 14px;
+    font-family: KyoboHand;
+    width: 100%;
+    text-align: center;
 .taken {
     height: 64%!important;
     width: 82%!important;

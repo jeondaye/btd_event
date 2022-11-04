@@ -256,3 +256,12 @@ button{
 .blind{
     display: none;
 }
+
+/* 편지쓰기 페이지 */
+#letter_wrap{
+    font-family: drfont_daraehand;
+    font-size: 20px;
+    margin: 100px auto;
+    width: 100%;
+    text-align: center;
+}

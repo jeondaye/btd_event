@@ -180,7 +180,7 @@ button{
   }
 /* webcam page */
 #camera{
-    background: rgb(121 200 253 / 29%);
+    background: #f1e1ff;
 }
 
 #camera, #camera--view, #camera--sensor, #camera--output{
@@ -206,7 +206,7 @@ button{
 #camera--trigger{
     width: 275px;
     color: white;
-    background-color: rgb(121, 200, 253);
+    background-color: #b165f3;
     font-size: 16px;
     border-radius: 30px;
     border: none;

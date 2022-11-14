@@ -61,17 +61,6 @@
             cameraOutput.classList.add("taken");
             console.log(cameraSensor.height);
         });
-        
-        cameraSwitch.addEventListener("click", function(){
-            navigator.mediaDevices.getUserMedia(constraints2)
-                .then(function(stream){
-                    track = stream.getTracks()[0];
-                    cameraView.srcObject = stream;
-                })
-                .catch(function(error){
-                    console.error("카메라에 문제가 있습니다.", error);
-                })
-        });
 
         $('#camera--trigger').on("click", function(){
             $('.blind').css('display','block');

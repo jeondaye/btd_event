@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>생일 기념 사진  </title>
         <link rel="stylesheet" href="https://jeondaye.github.io/btd_event/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     </head>
 <body>
@@ -21,8 +22,11 @@
                 </div>
             </div>
 
-        <button id="camera--trigger">🤳 생일 기념 폴라로이드 📸</button>
-        <p class="cam_notice">위 버튼을 클릭 후 결과물을 캡쳐하세요^^</p>
+            <div class="camera_btn">
+                <button id="camera--trigger">🤳 생일 기념 폴라로이드 📸</button>
+                <button id="camera--switch"><i class='bx bx-repeat'></i></button>
+            </div>
+            <p class="cam_notice">위 버튼을 클릭 후 결과물을 캡쳐하세요^^</p>
     </main>
 
     <script>
@@ -56,6 +60,20 @@
             cameraOutput.classList.add("taken");
             console.log(cameraSensor.height);
         });
+        
+        cameraSwitch.addEventListener("click", function(){
+            function cameraStart(){
+            navigator.mediaDevices.getUserMedia(constraints2)
+                .then(function(stream){
+                    track = stream.getTracks()[0];
+                    cameraView.srcObject = stream;
+
+                })
+                .catch(function(error){
+                    console.error("카메라에 문제가 있습니다.", error);
+                })
+        }
+    });
 
         $('#camera--trigger').on("click", function(){
             $('.blind').css('display','block');

@@ -220,6 +220,25 @@ button{
     transform: translateX(-50%);
     font-family: 'galmuri11';
 }
+#camera--switch{
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    font-size: 30px;
+    color: #79c8fd;
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+}
+.camera_btn{
+    display: flex;
+    height: 55px;
+    position: absolute;
+    bottom: 5%;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
 .cam_notice{
     position: absolute;
     bottom: 8px;

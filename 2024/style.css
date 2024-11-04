@@ -46,7 +46,7 @@ h1 span{
 	position: relative;
 	margin: -10em auto 0 auto;
   }
-  rect{animation: op .3s;opacity:0;animation-fill-mode:forwards;}
+  rect{animation: op .5s;opacity:0;animation-fill-mode:forwards;}
   /* ============================================== Candle
   */
   .velas {

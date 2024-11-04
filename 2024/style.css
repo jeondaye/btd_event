@@ -26,6 +26,10 @@ body {
 	margin: 15px 0 0 0;
 	width: 100%;
   }
+h1 span{
+	color: transparent;
+	-webkit-text-stroke: 1px #ffadbb;
+}
 .cake_wrap{
 	position: absolute;
 	top: 0%;

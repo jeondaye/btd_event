@@ -6,7 +6,7 @@
 
 body {
 	margin: 0;
-	background: #ee9ca7;
+	background: #fff;
 	cursor: crosshair;
   }
   canvas{display:block;}
@@ -31,7 +31,7 @@ body {
   }
 h1 span{
 	color: transparent;
-	-webkit-text-stroke: 1px #ffadbb;
+	-webkit-text-stroke: 1px #ee9ca7;
 }
 .cake_wrap{
 	position: absolute;
@@ -45,7 +45,7 @@ h1 span{
 	position: relative;
 	margin: -10em auto 0 auto;
   }
-  
+  rect{animation: op .3s;opacity:0;animation-fill-mode:forwards;}
   /* ============================================== Candle
   */
   .velas {
